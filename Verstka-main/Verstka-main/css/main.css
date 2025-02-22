@@ -1,0 +1,169 @@
+.wrapper {
+    font-family: "League Spartan", sans-serif;
+    color: #161515;
+}
+
+.welcome__container {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome {
+    background: #f8f8f8;
+    padding-bottom: 168px;
+
+}
+
+.offer {
+    padding-top: 104px;
+    max-width: 640px;
+}
+
+.offer__model {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 53px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 250px;
+    color: #272727;
+    line-height: 0.9;
+    margin-bottom: 54px;
+}
+
+.desc {
+    font-size: 32px;
+    line-height: 155%;
+}
+
+.buy__link {
+    background-color: #161515;
+    font-size: 32px;
+    color: #f1f0f0;
+    padding: 26px 44px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+
+}
+
+.buy__link:hover {
+    background-color: #fff;
+    color: #161515;
+    border-color: #161515;
+}
+
+
+.buy__link:active {
+    background-color: beige;
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+}
+
+.buy__price {
+    /* box-shadow- 1- смешение по оси абцисс 2- смещение по оси ординат 3- растяжение 4- размытие -- цвет */
+    box-shadow: 0 0 28px 0 rgba(214, 214, 214, 0.25);
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 32px;
+    color: #272727;
+    padding: 0px 28px;
+}
+
+.buy {
+    display: flex;
+}
+
+.welcome__img-wrap {
+    /* запретить флекс элементу ужиматся если не хватает места в флекс контейнере */
+    flex-shrink: 0;
+}
+
+.products {
+    top: 43px;
+    padding-bottom: 142px;
+}
+
+
+.container {}
+
+.products__container {
+    max-width: 531px;
+    text-align: center;
+}
+
+
+.products__header {
+    color: #000;
+    margin-bottom: 194px;
+}
+
+.supertitle {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.products__title {
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.products__list {
+    margin-bottom: 100px;
+}
+
+/* Установить внешний нижний отступ для карточки кроме последнего браткского элемента с этим классом */
+.product::not(:last-child) {
+    margin-bottom: 150px;
+}
+
+.product__img {
+    max-width: 286px;
+    margin-bottom: 132px;
+}
+
+.product__desk {
+    font-weight: 400;
+    margin-bottom: 49px;
+}
+
+.product__title {
+    font-weight: 400px;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.products__desk {}
+
+.products__desk-title {}
+
+.products__desk-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-bottom: 1px solid #707070;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.products__desk-text {
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.products__desk-link {
+    font-weight: 500;
+    /* текст с подчёркиванием */
+    text-decoration: underline;
+    color: #bb8b5d;
+}
+
+.product__text {
+    font-size: 32px;
+    line-height: 1.55;
+}
